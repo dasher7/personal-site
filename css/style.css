@@ -61,7 +61,8 @@ hr {
   padding: 0.5em;
 }
 
-#highlight {
+#highlight,
+#highlight-special {
   color: #f5b841;
 }
 
@@ -172,11 +173,16 @@ hr {
   align-self: center;
 }
 
-.footer {
+.footer,
+.home-nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.home-nav {
+  display: none;
 }
 
 .footer-items {
@@ -191,4 +197,89 @@ hr {
 
 .footer-items li {
   margin-right: 1em;
+}
+
+@media screen and (max-width: 1400px) {
+  .main-content-container {
+    margin: 5em 7em 0em 7em;
+  }
+  hr {
+    margin: 0.75em 12em 0em 12em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .presentation-title {
+    font-size: 2em;
+  }
+
+  .main-content-container {
+    margin: 4em 6em 0em 6em;
+  }
+
+  hr {
+    margin: 0.75em 7em 0em 7em;
+  }
+}
+
+@media screen and (max-width: 806px) {
+  .presentation-title {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+
+  hr {
+    margin: 0.5em 4em 0em 4em;
+    border-top: 2px solid white;
+  }
+
+  #highlight-special {
+    text-decoration: underline;
+    font-weight: 800;
+  }
+
+  .presentation-title {
+    font-size: 1.15em;
+  }
+
+  .navbar {
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+
+    padding: 0.5rem;
+  }
+
+  .navbar-items {
+    display: none;
+  }
+
+  .main-content-container {
+    margin: 2em 3em 0em 3em;
+  }
+
+  .home-nav {
+    display: flex;
+    margin-top: 2em;
+    font-size: 14px;
+    font-family: "Muli", sans-serif;
+    font-style: normal;
+    color: #d8cbcb;
+  }
+
+  .hosting {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+  }
+
+  .footer-items li {
+    margin-right: 0.5em;
+    padding-bottom: 0.3em;
+  }
 }
