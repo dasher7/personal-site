@@ -280,6 +280,33 @@ hr {
 
   .footer-items li {
     margin-right: 0.5em;
-    padding-bottom: 0.3em;
+    padding-bottom: 0.5em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .presentation-title {
+    font-size: 1em;
+  }
+
+  .footer-items li {
+    margin-right: 0.5em;
+    padding-bottom: 0.5em;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .presentation-title {
+    font-size: 0.75em;
+  }
+
+  .cit,
+  .home-nav {
+    font-size: 12px;
+  }
+
+  .footer-items li {
+    margin-right: 0.5em;
+    padding-bottom: 0.5em;
   }
 }
