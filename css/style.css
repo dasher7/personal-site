@@ -109,6 +109,45 @@ hr {
   margin-left: 1rem;
 }
 
+.cit:before {
+  content: "";
+  animation: animate infinite 15s;
+}
+
+@keyframes animate {
+  0% {
+    content: '"Hello, Champ!"';
+  }
+  35% {
+    content: '"How are you?"';
+  }
+  65% {
+    content: '"Hope you doing great!"';
+  }
+  90% {
+    content: '"It is great to have you here."';
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #f5b841;
+  }
+}
+
 .tit {
   font-family: "Spectral SC", serif;
   font-style: italic;
@@ -251,7 +290,6 @@ hr {
     justify-content: center;
     align-items: center;
     margin-top: 1em;
-
     padding: 0.5rem;
   }
 
